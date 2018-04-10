@@ -81,18 +81,20 @@
 
 
 
-<meta name="description" content="前端技术学习">
+<meta name="description" content="Git是什么？Git(读音为/gɪt/。)是一个开源的分布式版本控制系统，可以有效、高速的处理从小到非常大的项目版本管理。Git是目前最流行的版本管理系统，学会Git几乎成为了开发者必备的技能 Git有很多优势，我觉得最方便的就是远程操作非常便捷，简单。 大概5个Git命令就能涵盖git远程操作  git clone git remote git fetch git pull git push">
 <meta name="keywords" content="ps3,Games">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git介绍以及简单用法">
 <meta property="og:url" content="https://everglow1.github.io/blog/2018/04/09/我的第一篇博客，你不知道的JavaScript/index.html">
 <meta property="og:site_name" content="那一只蚊子的博客">
-<meta property="og:description" content="前端技术学习">
+<meta property="og:description" content="Git是什么？Git(读音为/gɪt/。)是一个开源的分布式版本控制系统，可以有效、高速的处理从小到非常大的项目版本管理。Git是目前最流行的版本管理系统，学会Git几乎成为了开发者必备的技能 Git有很多优势，我觉得最方便的就是远程操作非常便捷，简单。 大概5个Git命令就能涵盖git远程操作  git clone git remote git fetch git pull git push">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-10T12:11:41.775Z">
+<meta property="og:image" content="https://everglow1.github.io/blog/2018/04/09/uploads/bg2014061202.jpg">
+<meta property="og:updated_time" content="2018-04-10T13:00:59.508Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git介绍以及简单用法">
-<meta name="twitter:description" content="前端技术学习">
+<meta name="twitter:description" content="Git是什么？Git(读音为/gɪt/。)是一个开源的分布式版本控制系统，可以有效、高速的处理从小到非常大的项目版本管理。Git是目前最流行的版本管理系统，学会Git几乎成为了开发者必备的技能 Git有很多优势，我觉得最方便的就是远程操作非常便捷，简单。 大概5个Git命令就能涵盖git远程操作  git clone git remote git fetch git pull git push">
+<meta name="twitter:image" content="https://everglow1.github.io/blog/2018/04/09/uploads/bg2014061202.jpg">
 
 
 
@@ -374,7 +376,41 @@
       
 
       
-        
+        <h6 id="Git是什么？"><a href="#Git是什么？" class="headerlink" title="Git是什么？"></a>Git是什么？</h6><p>Git(读音为/gɪt/。)是一个开源的分布式版本控制系统，可以有效、高速的处理从小到非常大的项目版本管理。<br>Git是目前最流行的版本管理系统，学会Git几乎成为了开发者必备的技能</p>
+<p>Git有很多优势，我觉得最方便的就是远程操作非常便捷，简单。 大概5个Git命令就能涵盖git远程操作</p>
+<ol>
+<li>git clone</li>
+<li>git remote</li>
+<li>git fetch</li>
+<li>git pull</li>
+<li>git push</li>
+</ol>
+<p><img src="../uploads/bg2014061202.jpg" alt="git"></p>
+<p><strong>git clone</strong></p>
+<p>远程操作的第一步就要用到git clone ，从远程主机克隆一个版本库, 会在自己本地主机生成一个目录，与远程主机的库同名</p>
+<p>git clone &lt;版本库的地址&gt;  例如：  git clone <a href="https://github.com/everglow1/hello-world.git" target="_blank" rel="noopener">https://github.com/everglow1/hello-world.git</a></p>
+<p><strong>git remote</strong></p>
+<p>git 要求每个远程主机都必须有一个主机名， git remote 命令就用于管理主机名</p>
+<p>git remote    // 列出所有主机名</p>
+<p>git remote -v     // 查看远程主机的网址</p>
+<p>克隆版本库的时候，所使用的远程主机会被命名为 origin ，如果你想用其它主机名， git clone -o </p>
+<p>git remote show &lt;主机名&gt;       // 查看该主机的详细信息</p>
+<p>git remote add &lt;主机名&gt; &lt;网址&gt;    // 添加远程主机</p>
+<p>git remote rm &lt;主机名&gt;    // 删除远程主机</p>
+<p>git remote rename &lt;原主机名&gt; &lt;新主机名&gt;  // 改远程主机名</p>
+<p><strong>git fetch</strong></p>
+<p>远程主机的版本库有了新的更新，需要将更新取回本地，需要用到 git fetch</p>
+<p><code>git fetch &lt;远程主机名&gt;</code>     // 将远程主机的所有更新，取回本地</p>
+<p>git fetch 通常用来查看其他人的进程，它对你的本地开发代码没有影响</p>
+<p><strong>git pull</strong></p>
+<p>git pull 作用： 取回远程主机某个分支的更新，再与本地指定分支合并。</p>
+<p>例如<br><code>git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</code></p>
+<p><code>git pull origin next:master</code>      // 取回origin主机的next分支， 与本地的master分支合并<br><code>git pull origin next</code>    // 远程分支与当前分支合并</p>
+<p><strong>git push</strong></p>
+<p>git push 作用： 用于将本地分支的更新，推送到远程主机，格式与git pull相似</p>
+<p><code>git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</code></p>
+<p><code>git push origin master</code>    // 将本地的master分支推送到origin主机的master分支，假设后者不存在，将会被重建</p>
+
       
     </div>
     
@@ -483,8 +519,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -565,6 +610,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#Git是什么？"><span class="nav-number">1.</span> <span class="nav-text">Git是什么？</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
