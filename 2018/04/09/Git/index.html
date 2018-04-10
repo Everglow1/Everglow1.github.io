@@ -89,12 +89,12 @@
 <meta property="og:site_name" content="那一只蚊子的博客">
 <meta property="og:description" content="Git是什么？Git(读音为/gɪt/。)是一个开源的分布式版本控制系统，可以有效、高速的处理从小到非常大的项目版本管理。Git是目前最流行的版本管理系统，学会Git几乎成为了开发者必备的技能">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://everglow1.github.io/blog/2018/04/09/uploads/bg2014061202.jpg">
-<meta property="og:updated_time" content="2018-04-10T13:11:01.087Z">
+<meta property="og:image" content="https://everglow1.github.io/uploads/bg2014061202.jpg">
+<meta property="og:updated_time" content="2018-04-10T13:21:37.089Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git介绍以及简单用法">
 <meta name="twitter:description" content="Git是什么？Git(读音为/gɪt/。)是一个开源的分布式版本控制系统，可以有效、高速的处理从小到非常大的项目版本管理。Git是目前最流行的版本管理系统，学会Git几乎成为了开发者必备的技能">
-<meta name="twitter:image" content="https://everglow1.github.io/blog/2018/04/09/uploads/bg2014061202.jpg">
+<meta name="twitter:image" content="https://everglow1.github.io/uploads/bg2014061202.jpg">
 
 
 
@@ -386,19 +386,19 @@
 <li>git pull</li>
 <li>git push</li>
 </ol>
-<p><img src="../uploads/bg2014061202.jpg" alt="git"></p>
+<p><img src="/uploads/bg2014061202.jpg" alt="git"></p>
 <p><strong>git clone</strong></p>
 <p>远程操作的第一步就要用到git clone ，从远程主机克隆一个版本库, 会在自己本地主机生成一个目录，与远程主机的库同名</p>
-<p>git clone &lt;版本库的地址&gt;  例如：  git clone <a href="https://github.com/everglow1/hello-world.git" target="_blank" rel="noopener">https://github.com/everglow1/hello-world.git</a></p>
+<p><code>git clone &lt;版本库的地址&gt;  例如：  git clone https://github.com/everglow1/hello-world.git</code></p>
 <p><strong>git remote</strong></p>
 <p>git 要求每个远程主机都必须有一个主机名， git remote 命令就用于管理主机名</p>
-<p>git remote    // 列出所有主机名</p>
-<p>git remote -v     // 查看远程主机的网址</p>
+<p><code>git remote</code>  // 列出所有主机名</p>
+<p><code>git remote -v</code>     // 查看远程主机的网址</p>
 <p>克隆版本库的时候，所使用的远程主机会被命名为 origin ，如果你想用其它主机名， git clone -o </p>
-<p>git remote show &lt;主机名&gt;       // 查看该主机的详细信息</p>
-<p>git remote add &lt;主机名&gt; &lt;网址&gt;    // 添加远程主机</p>
-<p>git remote rm &lt;主机名&gt;    // 删除远程主机</p>
-<p>git remote rename &lt;原主机名&gt; &lt;新主机名&gt;  // 改远程主机名</p>
+<p><code>git remote show &lt;主机名&gt;</code>       // 查看该主机的详细信息</p>
+<p><code>git remote add &lt;主机名&gt; &lt;网址&gt;</code>    // 添加远程主机</p>
+<p><code>git remote rm &lt;主机名&gt;</code>   // 删除远程主机</p>
+<p><code>git remote rename &lt;原主机名&gt; &lt;新主机名&gt;</code>  // 改远程主机名</p>
 <p><strong>git fetch</strong></p>
 <p>远程主机的版本库有了新的更新，需要将更新取回本地，需要用到 git fetch</p>
 <p><code>git fetch &lt;远程主机名&gt;</code>     // 将远程主机的所有更新，取回本地</p>
