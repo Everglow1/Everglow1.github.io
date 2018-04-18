@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="js没有类的概念，也没有类和实例的分别，全靠原型链模式来实现继承，这是为什么呢？   在开发这门语言的时候，开发者只是想把它作为一种简单的语言，只需要做一些简单的操作就够了，比如填写表单等，   当时，设计者受到Java的影响，JavaScript里面所有数据类型都是对象（可以说是js一切皆对象），既然一切皆对象，   那必须要有一种机制，把所有对象联系起来。 所以他设计了“继承”机制。 但是">
+<meta name="description" content="js没有类的概念，也没有类和实例的分别，全靠原型链模式来实现继承，这是为什么呢？">
 <meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS的继承机制">
 <meta property="og:url" content="https://everglow1.github.io/blog/2018/04/18/JS的继承机制/index.html">
 <meta property="og:site_name" content="那一只蚊子的博客">
-<meta property="og:description" content="js没有类的概念，也没有类和实例的分别，全靠原型链模式来实现继承，这是为什么呢？   在开发这门语言的时候，开发者只是想把它作为一种简单的语言，只需要做一些简单的操作就够了，比如填写表单等，   当时，设计者受到Java的影响，JavaScript里面所有数据类型都是对象（可以说是js一切皆对象），既然一切皆对象，   那必须要有一种机制，把所有对象联系起来。 所以他设计了“继承”机制。 但是">
+<meta property="og:description" content="js没有类的概念，也没有类和实例的分别，全靠原型链模式来实现继承，这是为什么呢？">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-18T14:56:39.784Z">
+<meta property="og:updated_time" content="2018-04-18T15:01:19.735Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS的继承机制">
-<meta name="twitter:description" content="js没有类的概念，也没有类和实例的分别，全靠原型链模式来实现继承，这是为什么呢？   在开发这门语言的时候，开发者只是想把它作为一种简单的语言，只需要做一些简单的操作就够了，比如填写表单等，   当时，设计者受到Java的影响，JavaScript里面所有数据类型都是对象（可以说是js一切皆对象），既然一切皆对象，   那必须要有一种机制，把所有对象联系起来。 所以他设计了“继承”机制。 但是">
+<meta name="twitter:description" content="js没有类的概念，也没有类和实例的分别，全靠原型链模式来实现继承，这是为什么呢？">
 
 
 
@@ -375,6 +375,7 @@
 
       
         <p>  js没有类的概念，也没有类和实例的分别，全靠<strong>原型链</strong>模式来实现继承，这是为什么呢？</p>
+  <a id="more"></a>
 <p>  在开发这门语言的时候，开发者只是想把它作为一种简单的语言，只需要做一些简单的操作就够了，比如填写表单等，</p>
 <p>  当时，设计者受到Java的影响，JavaScript里面所有数据类型都是对象（可以说是js一切皆对象），既然一切皆对象，</p>
 <p>  那必须要有一种机制，把所有对象联系起来。 所以他设计了“继承”机制。 但是设计者不打算引入“类”的概念，因为有</p>

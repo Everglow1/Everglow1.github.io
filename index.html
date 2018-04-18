@@ -372,46 +372,14 @@
 
       
         
-          
-            <p>  js没有类的概念，也没有类和实例的分别，全靠<strong>原型链</strong>模式来实现继承，这是为什么呢？</p>
-<p>  在开发这门语言的时候，开发者只是想把它作为一种简单的语言，只需要做一些简单的操作就够了，比如填写表单等，</p>
-<p>  当时，设计者受到Java的影响，JavaScript里面所有数据类型都是对象（可以说是js一切皆对象），既然一切皆对象，</p>
-<p>  那必须要有一种机制，把所有对象联系起来。 所以他设计了“继承”机制。 但是设计者不打算引入“类”的概念，因为有</p>
-<p>  了“类”，js就是一门完整的面向对象编程的语言了，太过于正式了（他是想设计一种简单的语言），于是，设计者借鉴了</p>
-<p>  C++和Java语言的new命令，用来生成实例。</p>
-<p>  因此，设计者就把new引入了JavaScript， 用来从原型对象生成一个实例对象。 但是，JavaScript没有类，怎么来表示原型</p>
-<p>  对象呢。</p>
-<p>  设计者想到c++和java使用new命令时，都会调用“类”的构造函数，他就做了一个简单化的设计，new后面跟的不是类，是构造</p>
-<p>  函数，</p>
-<p>  这是一个例子：</p>
-<p>  <code>function Cat(name) {</code><br>  <code>this.name = name;</code><br>  <code>}</code><br>  对于这个构造函数，使用new会生成一个猫对象的实例。</p>
-<p>  <code>var cat1 = new Cat(&#39;小黑&#39;);</code><br>  <code>alert(cat1.name);  // 小黑</code></p>
-<p><strong>但是new运算符也有缺点</strong></p>
-<p>  它无法共享属性和方法。</p>
-<p>  例如，在Cat对象的构造函数中， 设置一个实例对象的共有属性species</p>
-<p>  <code>function Cat(name) {this.name = name; this.species = &#39;猫科&#39;;}</code></p>
-<p>  再生成两个实例对象：</p>
-<p>  <code>var cat1 = new Cat(&#39;小黑)</code><br>  <code>var cat2 = new Cat(&#39;小白&#39;)</code></p>
-<p>  这时，它们都继承了构造函数</p>
-<p>  这是两个独立的属性，修改其中一个不会影响到另一个， </p>
-<p>  <code>cat1.species = &#39;植物科&#39;</code><br>  <code>alert(cat2.species);  // 猫科</code>  修改实例cat1并没有影响到实例cat2</p>
-<p>  每个实例对象，都有自己的属性和方法，无法做到共享，极大地浪费了资源（重要原因）</p>
-<p>  <strong>prototype</strong></p>
-<p>  正是由于上一点，设计者为构造函数设置了一个prototype属性。这个属性包含一个对象，所有实例对象需要共享的属性和方法</p>
-<p>  都放在这个对象里面，不需要共享的就放到构造函数里面，</p>
-<p>  实例对象一但创建了，将自动引用prototype对象的属性和方法。所以，实例对象的属性和方法，分成两种。本地的和引用的。</p>
-<p>  以Cat构造函数为例子。</p>
-<p>  function Cat(name) {<br>    this.name = name;<br>  }<br>  Cat.prototype = {<br>    species: ‘猫科’<br>  }</p>
-<p>  var cat1 = new Cat(‘小黑’)</p>
-<p>  var cat1 = new Cat(‘小白’)</p>
-<p>  alert(cat1.species);  // 猫科<br>  alert(cat2.species);  // 猫科</p>
-<p>species放在prototype对象里，被两个实例对象共享了。如果修改prototype对象。就会同时影响到两个实例对象</p>
-<p>  <code>Cat.prototype.species = &#39;植物科&#39;</code></p>
-<p>  <code>alert(cat1.species);  // 植物科</code><br>  <code>alert(cat1.species);  // 植物科</code></p>
-<p>所以： 所有的实例对象共享一个prototype对象， prototype对象是实例对象的原型，而实例对象则’继承’了prototype对象。</p>
-<p>这是JavaScript的继承机制。</p>
-
-          
+          <p>  js没有类的概念，也没有类和实例的分别，全靠<strong>原型链</strong>模式来实现继承，这是为什么呢？</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/everglow1.github.io/2018/04/18/JS的继承机制/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
