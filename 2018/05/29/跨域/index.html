@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="那一只蚊子的博客">
 <meta property="og:description" content="跨域  一个域名地址的组成：   http://  www  .  adc.com  :  8080  /  script/jquery.js   协议     子域名   主域名      端口号     请求资源地址   端口号默认是8080，一般省略。   当协议，子域名，主域名，端口号中任意一个不相同时，就算不同域   不同域之间相互请求资源，就算跨域   JavaScript处于安全方面">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-29T10:17:08.515Z">
+<meta property="og:updated_time" content="2018-05-29T10:18:31.384Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="跨域和解决跨域的方法">
 <meta name="twitter:description" content="跨域  一个域名地址的组成：   http://  www  .  adc.com  :  8080  /  script/jquery.js   协议     子域名   主域名      端口号     请求资源地址   端口号默认是8080，一般省略。   当协议，子域名，主域名，端口号中任意一个不相同时，就算不同域   不同域之间相互请求资源，就算跨域   JavaScript处于安全方面">
@@ -403,6 +403,7 @@
 <p>  当协议，子域名，主域名，端口号中任意一个不相同时，就算不同域</p>
 <p>  不同域之间相互请求资源，就算<strong>跨域</strong></p>
 <p>  JavaScript处于安全方面的考虑，不允许跨域调用其它页面的对象。<br>  <a href="http://www.abc.com/index.html" target="_blank" rel="noopener">www.abc.com/index.html</a> 调用  <a href="http://www.abc.com/server.php" target="_blank" rel="noopener">www.abc.com/server.php</a>  (非跨域)<br>  <a href="http://www.abc.com/index.html" target="_blank" rel="noopener">www.abc.com/index.html</a> 调用  <a href="http://www.hhh.com/server.php" target="_blank" rel="noopener">www.hhh.com/server.php</a>  (跨域)<br>  <a href="http://www.abc.com/index.html" target="_blank" rel="noopener">www.abc.com/index.html</a> 调用  bbs.abc.com/server.php   (跨域)<br>  …</p>
+  <a id="more"></a>
 <p>  <strong>处理跨域方法一  ： 代理</strong></p>
 <p>  通过在同域名的web服务器端创建一个代理：<br>  北京服务器（域名：<a href="http://www.beijing.com）" target="_blank" rel="noopener">www.beijing.com）</a><br>  上海服务器（域名： <a href="http://www.sahnghai.com）" target="_blank" rel="noopener">www.sahnghai.com）</a></p>
 <p>  比如早北京的web服务器的后台<br>  （<a href="http://www.beijing.com/proxy-shanghaiservice.php）来调用上海服务器" target="_blank" rel="noopener">www.beijing.com/proxy-shanghaiservice.php）来调用上海服务器</a><br>  （<a href="http://www.shanghai.com/service.php）的服务，然后把响应结果返回给前端，这样前端调用同域名的服务就和调用上海的服务器的服务效果相同了。" target="_blank" rel="noopener">www.shanghai.com/service.php）的服务，然后把响应结果返回给前端，这样前端调用同域名的服务就和调用上海的服务器的服务效果相同了。</a></p>
