@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="跨域  一个域名地址的组成：   http://  www  .  adc.com  :  8080  /  script/jquery.js   协议     子域名   主域名      端口号     请求资源地址   端口号默认是8080，一般省略。   当协议，子域名，主域名，端口号中任意一个不相同时，就算不同域   不同域之间相互请求资源，就算跨域   JavaScript处于安全方面">
+<meta name="description" content="跨域  一个域名地址的组成：   http://  www  .  adc.com  :  8080  /  script/jquery.js   协议     子域名   主域名      端口号     请求资源地址   端口号默认是80，一般省略。   当协议，子域名，主域名，端口号中任意一个不相同时，就算不同域   不同域之间相互请求资源，就算跨域   JavaScript处于安全方面的考">
 <meta name="keywords" content="js, html,笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="跨域和解决跨域的方法">
 <meta property="og:url" content="https://everglow1.github.io/blog/2018/05/29/跨域/index.html">
 <meta property="og:site_name" content="那一只蚊子的博客">
-<meta property="og:description" content="跨域  一个域名地址的组成：   http://  www  .  adc.com  :  8080  /  script/jquery.js   协议     子域名   主域名      端口号     请求资源地址   端口号默认是8080，一般省略。   当协议，子域名，主域名，端口号中任意一个不相同时，就算不同域   不同域之间相互请求资源，就算跨域   JavaScript处于安全方面">
+<meta property="og:description" content="跨域  一个域名地址的组成：   http://  www  .  adc.com  :  8080  /  script/jquery.js   协议     子域名   主域名      端口号     请求资源地址   端口号默认是80，一般省略。   当协议，子域名，主域名，端口号中任意一个不相同时，就算不同域   不同域之间相互请求资源，就算跨域   JavaScript处于安全方面的考">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-29T10:18:31.384Z">
+<meta property="og:updated_time" content="2018-06-05T12:36:27.235Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="跨域和解决跨域的方法">
-<meta name="twitter:description" content="跨域  一个域名地址的组成：   http://  www  .  adc.com  :  8080  /  script/jquery.js   协议     子域名   主域名      端口号     请求资源地址   端口号默认是8080，一般省略。   当协议，子域名，主域名，端口号中任意一个不相同时，就算不同域   不同域之间相互请求资源，就算跨域   JavaScript处于安全方面">
+<meta name="twitter:description" content="跨域  一个域名地址的组成：   http://  www  .  adc.com  :  8080  /  script/jquery.js   协议     子域名   主域名      端口号     请求资源地址   端口号默认是80，一般省略。   当协议，子域名，主域名，端口号中任意一个不相同时，就算不同域   不同域之间相互请求资源，就算跨域   JavaScript处于安全方面的考">
 
 
 
@@ -399,7 +399,7 @@
         <h4 id="跨域"><a href="#跨域" class="headerlink" title="跨域"></a>跨域</h4><p>  一个域名地址的组成：</p>
 <p>  http://  www  .  adc.com  :  8080  /  script/jquery.js</p>
 <p>  协议     子域名   主域名      端口号     请求资源地址</p>
-<p>  端口号默认是8080，一般省略。</p>
+<p>  端口号默认是80，一般省略。</p>
 <p>  当协议，子域名，主域名，端口号中任意一个不相同时，就算不同域</p>
 <p>  不同域之间相互请求资源，就算<strong>跨域</strong></p>
 <p>  JavaScript处于安全方面的考虑，不允许跨域调用其它页面的对象。<br>  <a href="http://www.abc.com/index.html" target="_blank" rel="noopener">www.abc.com/index.html</a> 调用  <a href="http://www.abc.com/server.php" target="_blank" rel="noopener">www.abc.com/server.php</a>  (非跨域)<br>  <a href="http://www.abc.com/index.html" target="_blank" rel="noopener">www.abc.com/index.html</a> 调用  <a href="http://www.hhh.com/server.php" target="_blank" rel="noopener">www.hhh.com/server.php</a>  (跨域)<br>  <a href="http://www.abc.com/index.html" target="_blank" rel="noopener">www.abc.com/index.html</a> 调用  bbs.abc.com/server.php   (跨域)<br>  …</p>
